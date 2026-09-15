@@ -1,31 +1,31 @@
-# UGM Gym Partner & Facility Tracker - Gamaspot
+# UGM Gym Partner & Facility Tracker - GAMASPOT
 
 > An AI-powered workout partner matching and gym capacity monitoring platform built exclusively for Universitas Gadjah Mada (UGM) students.
 
-UGM Gym Partner is a campus-focused fitness platform designed to help UGM students find compatible workout partners, coordinate workout schedules, and monitor gym facility capacity in real time.
+UGM Gym Partner is a campus-focused fitness platform designed to help UGM students find compatible workout partners, coordinate workout schedules, communicate safely, and monitor gym facility capacity.
 
-The platform combines **UGM student verification, workout partner matching, schedule synchronization, facility check-ins, occupancy monitoring, and QR-based reservations** into a single campus fitness ecosystem.
+The platform combines UGM student verification, workout partner matching, schedule synchronization, social safety features, in-app communication, facility reservations, and real-time capacity monitoring into a single campus fitness ecosystem.
 
-Created by:
+Created By:
 * Akhnaf Fawzan Yogatrisna - 24/536720/TK/59561 - Full-stack Developer
-* Musa Hanif Moeljawan - 24/536720/TK/59561 - Full-stack Developer
+* Musa Hanif Moeljawan - 24/533080/TK/59061 - Full-stack Developer
 
 ---
 
 ## Features
 
-### Authentication & User Verification
+### 1. Authentication & User Verification
 
 * UGM email verification using `@mail.ugm.ac.id`
 * Campus-only user access
 * Role-Based Access Control (RBAC)
-* Student and facility manager portals
+* Student, Facility Manager, and IT Admin roles
 * Verified UGM student profile
 * Workout style and pacing preferences
 
-### Workout Partner Matching
+### 2. Workout Partner Matching
 
-Find compatible workout partners based on:
+Students can find compatible workout partners based on:
 
 * Workout schedule
 * Fitness discipline
@@ -42,68 +42,146 @@ Supported workout styles include:
 * Heavy Strength
 * PPL
 
-### Schedule Sync
+### 3. Schedule Synchronization
 
 Students can enter their available workout hours through a visual schedule grid.
 
-The system identifies students with overlapping free time, making it easier to find workout partners who can train at the same time.
+The matching system identifies students with overlapping availability, allowing students to find partners who can train at the same time.
 
-### Real-Time Spotter Beacon
+### 4. Social Safety & Moderation
 
-Students can broadcast a **Spotter Beacon** when they need assistance during a workout.
+Because workout partners meet physically on campus, the platform provides safety and accountability features.
 
-Nearby students training at the same facility can receive notifications and respond to the request.
+#### User Rating & Reliability Score
 
-### Facility Check-In
+Students can provide feedback after a workout session.
 
-Students can select their current workout location from supported UGM facilities:
+The system tracks reliability indicators such as:
+
+* Attended
+* No-show
+* Cancelled
+* Reliability score
+
+This helps students make more informed decisions when choosing workout partners.
+
+#### Reporting & Blocking
+
+Students can:
+
+* Report inappropriate behavior
+* Report harassment
+* Report improper gym etiquette
+* Block other users
+* Submit reports directly to IT Admins / Moderators
+
+IT Admins can review reports and take appropriate moderation actions.
+
+### 5. In-App Communication
+
+Students do not need to immediately exchange personal contact information after finding a match.
+
+#### Direct Chat
+
+Once a workout invitation or match is accepted, students can communicate through an in-app direct messaging system.
+
+The chat can be used to coordinate:
+
+* Workout time
+* Meeting location
+* Workout plans
+* Schedule changes
+
+#### Notifications
+
+The system provides real-time or in-app notifications for important events, including:
+
+* Workout invitation received
+* Workout invitation accepted
+* Workout invitation declined
+* New chat message
+* Session request
+* Reservation updates
+* Moderation updates
+
+### 6. Facility Check-In
+
+Students can select their workout location from supported UGM facilities:
 
 * GMC
 * Lembah
 * UGM Residence
 * GIK Gym
 
-The selected facility is displayed as part of the student's active workout status.
+The selected facility is associated with the student's active workout session.
 
-### Live Gym Occupancy
+### 7. Live Gym Occupancy
 
-Facility managers can monitor gym occupancy across supported facilities.
+Facility Managers can monitor gym occupancy across supported facilities.
 
 The system provides capacity indicators:
 
-* 🟢 Low
-* 🟡 Moderate
-* 🔴 Peak / High Capacity
+* Low
+* Moderate
+* Peak / High Capacity
 
-This helps facility managers identify overcrowding and monitor facility usage.
+Live occupancy data helps facility managers identify overcrowding and monitor facility usage.
 
-### Slot Reservation & QR Check-In
+### 8. Slot Reservation & QR Check-In
 
-Students can reserve gym slots and receive a unique QR check-in pass.
+Students can reserve available gym slots and receive a unique QR check-in pass.
 
-Facility managers can scan the QR code to verify the student's reservation and entry status.
+Facility Managers can scan the QR code to verify:
+
+* Student identity
+* UGM email
+* Reservation status
+* Check-in status
+
+### 9. Automated No-Show & Overstay Release
+
+The reservation system handles unused or expired reservations automatically.
+
+If a student reserves a slot but does not complete QR check-in within **15 minutes**, the reservation is automatically released back into the available capacity pool.
+
+The system can also track session duration and release reservations when the allowed usage period has ended.
+
+This prevents reserved capacity from being unnecessarily locked by inactive users.
+
+### 10. Peak Hour Reservation Rules
+
+To maintain fair access during busy periods, the system can enforce peak-hour reservation limits.
+
+During peak traffic:
+
+* Students can have a maximum of 1 active reservation per day.
+* Additional reservations are restricted while the student already has an active peak-hour reservation.
+* Released no-show reservations return to the available capacity pool.
+
+This helps distribute facility access fairly across students and faculties.
 
 ---
 
 ## Core Modules
 
-The system is organized into three main modules:
+The system is organized into four main modules.
 
-| Module                                 | Description                                                                               |
-| -------------------------------------- | ----------------------------------------------------------------------------------------- |
-| **Authentication & User Verification** | UGM email verification, RBAC, user profiles, and workout preferences                      |
-| **Partner Matching & Schedule Sync**   | Schedule synchronization, partner matching, filters, Spotter Beacon, and partner requests |
-| **Facility & Capacity Monitoring**     | Facility check-in, occupancy monitoring, slot reservations, and QR verification           |
+| Module                             | Description                                                                       |
+| ---------------------------------- | --------------------------------------------------------------------------------- |
+| Authentication & User Verification | UGM email verification, RBAC, profiles, and workout preferences                   |
+| Partner Matching & Scheduling      | Schedule synchronization, workout matching, filtering, and workout invitations    |
+| Social & Communication             | Reliability scores, reporting, blocking, direct chat, and notifications           |
+| Facility Management                | Check-in, occupancy monitoring, reservations, QR verification, and capacity rules |
 
 ---
 
 ## User Roles
 
-| Role                 | Responsibilities                                                                                    |
-| -------------------- | --------------------------------------------------------------------------------------------------- |
-| **Student Lifter**   | Find workout partners, manage schedules, check into facilities, reserve slots, and request spotters |
-| **Facility Manager** | Monitor gym occupancy and verify student check-ins                                                  |
-| **IT Admin**         | Manage users, roles, permissions, and system access                                                 |
+| Role                 | Responsibilities                                                                                          |
+| -------------------- | --------------------------------------------------------------------------------------------------------- |
+| Student              | Manage profile, find workout partners, coordinate sessions, chat, reserve gym slots, and provide feedback |
+| Facility Manager     | Monitor facility occupancy, manage capacity, verify QR check-ins, and handle facility reservations        |
+| IT Admin / Moderator | Manage users, roles, reports, blocks, moderation actions, and system access                               |
 
 ---
 
@@ -118,17 +196,26 @@ UGM Gym Partner
 │   └── User Profiles
 │
 ├── Partner Matching
-│   ├── Schedule Sync
+│   ├── Schedule Synchronization
 │   ├── Workout Preferences
-│   ├── Partner Matching
-│   ├── Spotter Beacon
-│   └── Partner Requests
+│   ├── Matching Algorithm
+│   └── Workout Invitations
+│
+├── Social & Communication
+│   ├── Reliability Score
+│   ├── Reporting
+│   ├── Blocking
+│   ├── Direct Chat
+│   └── Notifications
 │
 └── Facility Management
     ├── Facility Check-In
-    ├── Occupancy Tracking
+    ├── Live Occupancy
     ├── Slot Reservation
-    └── QR Verification
+    ├── QR Verification
+    ├── No-Show Release
+    ├── Overstay Release
+    └── Peak Hour Rules
 ```
 
 ---
@@ -153,9 +240,9 @@ UGM Gym Partner
 
 Make sure the following are installed:
 
-* [Node.js](https://nodejs.org/) v18+
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-* [Git](https://git-scm.com/)
+* Node.js v18+
+* Docker Desktop
+* Git
 
 ### Installation
 
@@ -177,7 +264,7 @@ NEXTAUTH_SECRET="your-secret-key"
 ALLOWED_DOMAIN="mail.ugm.ac.id"
 ```
 
-> Do not commit your `.env` file to GitHub.
+Do not commit your `.env` file to GitHub.
 
 ### Database
 
@@ -187,7 +274,7 @@ Start the local PostgreSQL environment using Docker:
 docker compose up -d
 ```
 
-Configure the database according to your project's database setup before running the application.
+Configure the database according to the project's database and migration setup.
 
 ### Run the Application
 
@@ -227,8 +314,14 @@ ugm-gym-partner/
 │   │   ├── matching/
 │   │   │   └── # Schedule sync & partner matching
 │   │   │
+│   │   ├── social/
+│   │   │   └── # Ratings, reporting & blocking
+│   │   │
+│   │   ├── communication/
+│   │   │   └── # Direct chat & notifications
+│   │   │
 │   │   └── facility/
-│   │       └── # Occupancy & QR check-in
+│   │       └── # Occupancy, reservations & QR check-in
 │   │
 │   ├── pages/
 │   │   └── # Application routes
@@ -246,7 +339,7 @@ ugm-gym-partner/
 
 ## Development Workflow
 
-The project uses the **Scrum** framework with one-week development sprints.
+The project follows the Scrum framework with one-week development sprints.
 
 ```text
 Sprint Planning
@@ -278,63 +371,226 @@ In Review / PR
 Done
 ```
 
-The team maintains a maximum of **2 active tasks per developer** to minimize context switching.
+The team maintains a maximum of 2 active tasks per developer to minimize context switching.
 
 ---
 
-## Development Roadmap
+## Development Responsibilities
 
-### Authentication & User Verification
+Both team members work as **Full-Stack Developers**, contributing across frontend, backend, database, API, and system integration.
+
+### Musa Hanif Moeljawan — Full-Stack Developer
+
+Primary focus:
+
+* Authentication and UGM email verification
+* User profiles and RBAC
+* Workout preference management
+* Schedule synchronization
+* Workout partner matching
+* Matching filters
+* Student-facing UI
+* Database models for users and matching
+* Matching APIs
+* Frontend and backend integration
+* Unit and integration testing
+
+Secondary responsibilities:
+
+* Product backlog management
+* User story definition
+* Acceptance criteria
+* Product validation
+* Code review
+
+### Akhnaf Fawzan Yogatrisna — Full-Stack Developer
+
+Primary focus:
+
+* Facility management
+* Gym slot reservations
+* QR check-in system
+* Live occupancy tracking
+* No-show and overstay handling
+* Peak-hour reservation rules
+* Social safety and moderation
+* Reliability scoring
+* Reporting and blocking
+* Direct chat
+* Notification system
+* Facility and moderation APIs
+* Database models for reservations, reports, chat, and occupancy
+* Frontend and backend integration
+* Unit and integration testing
+
+Secondary responsibilities:
+
+* Scrum facilitation
+* GitHub Project management
+* Technical architecture
+* Technical blocker resolution
+* Code review
+
+### Shared Responsibilities
+
+Both developers are responsible for:
+
+* Frontend development
+* Backend development
+* Database development
+* API design
+* Authentication integration
+* Testing
+* Debugging
+* Code review
+* Git workflow
+* Deployment
+* Technical documentation
+
+---
+
+## Product Backlog
+
+### Module 1 — Authentication & User Verification
 
 * [ ] UGM email verification
+* [ ] User registration
 * [ ] RBAC
 * [ ] Student profile
 * [ ] Workout preference setup
+* [ ] Verified UGM profile badge
 
-### Partner Matching
+### Module 2 — Partner Matching & Scheduling
 
 * [ ] Schedule Sync Grid
 * [ ] Workout partner matching
 * [ ] Fitness preference filtering
-* [ ] Spotter Beacon
-* [ ] Partner requests
+* [ ] Workout invitations
+* [ ] Match status management
+* [ ] Match compatibility scoring
 
-### Facility Management
+### Module 3 — Social Safety & Moderation
+
+* [ ] User reliability rating
+* [ ] No-show tracking
+* [ ] Reliability score calculation
+* [ ] User reporting
+* [ ] User blocking
+* [ ] IT Admin moderation dashboard
+* [ ] Report status management
+* [ ] Moderation actions
+
+### Module 4 — Communication
+
+* [ ] In-app direct messaging
+* [ ] Conversation management
+* [ ] Message notifications
+* [ ] Workout invitation notifications
+* [ ] Session request notifications
+* [ ] Reservation notifications
+
+### Module 5 — Facility Management
 
 * [ ] Facility selection
 * [ ] Student check-in
-* [ ] Live occupancy monitoring
+* [ ] Live occupancy tracking
+* [ ] Capacity status
 * [ ] Gym slot reservations
-* [ ] QR check-in verification
-
-### Future Improvements
-
-* [ ] Improved matching algorithm
-* [ ] Real-time notifications
-* [ ] Occupancy analytics
-* [ ] Mobile-first optimization
-* [ ] Performance improvements
+* [ ] QR check-in generation
+* [ ] QR verification
+* [ ] Automated no-show release
+* [ ] Overstay release
+* [ ] Peak-hour reservation limits
 
 ---
 
-## Problem & Goals
+## Reservation Logic
 
-Students often face several difficulties when using campus fitness facilities:
+The reservation system follows a controlled lifecycle:
 
-* Finding workout partners with compatible schedules
-* Working out alone because friends are unavailable
-* Not knowing how crowded a facility is before arriving
-* Coordinating across multiple campus fitness facilities
-* Inefficient facility check-in processes
+```text
+Available
+    │
+    ↓
+Reserved
+    │
+    ├── QR Check-In within 15 minutes
+    │          ↓
+    │       Active
+    │          │
+    │          ↓
+    │       Completed
+    │
+    └── No Check-In within 15 minutes
+               ↓
+           Auto Released
+               ↓
+           Available
+```
+
+During peak hours:
+
+```text
+Student
+   │
+   ↓
+Check Existing Active Reservation
+   │
+   ├── Active Peak Reservation → Reject New Reservation
+   │
+   └── No Active Peak Reservation
+              ↓
+        Allow Reservation
+```
+
+---
+
+## Matching Concept
+
+The matching system considers multiple compatibility factors rather than simply matching students randomly.
+
+```text
+Student Availability
+        +
+Workout Discipline
+        +
+Workout Goal
+        +
+Workout Pacing
+        +
+Preferred Facility
+        ↓
+Compatibility Calculation
+        ↓
+Ranked Partner Suggestions
+```
+
+This allows students to discover partners who are compatible both in terms of **when they train** and **how they train**.
+
+---
+
+## Project Goals
+
+UGM Gym Partner aims to solve several common problems faced by students using campus fitness facilities:
+
+* Difficulty finding workout partners with compatible schedules
+* Students working out alone because friends are unavailable
+* Lack of real-time gym occupancy information
+* Fragmented campus fitness facilities
 * Difficulty coordinating workout sessions
+* No reliable way to identify consistent workout partners
+* Lack of campus-specific reporting and moderation tools
+* Unnecessary sharing of personal contact information
+* Gym slots being wasted by no-shows
+* Unequal access during peak facility hours
 
-UGM Gym Partner aims to address these problems by connecting students with compatible workout partners while providing facility-level visibility and management tools.
+The platform addresses these problems through a combination of **partner matching, social accountability, communication tools, and facility management**.
 
 ---
 
 ## Project Scope
 
-This platform is designed specifically for the **Universitas Gadjah Mada campus ecosystem**.
+This platform is designed specifically for the Universitas Gadjah Mada campus ecosystem.
 
 Supported facilities:
 
@@ -344,30 +600,6 @@ Supported facilities:
 * GIK Gym
 
 Access is restricted to authorized UGM users and campus facility operations.
-
----
-
-## Development Team
-
-| Role                         | Member                   |
-| ---------------------------- | ------------------------ |
-| **Product Owner**            | Musa Hanif Moeljawan     |
-| **Scrum Master & Developer** | Akhnaf Fawzan Yogatrisna |
-
-### Musa Hanif Moeljawan
-
-* Product backlog management
-* User story definition
-* Acceptance criteria
-* Product validation
-
-### Akhnaf Fawzan Yogatrisna
-
-* Scrum facilitation
-* GitHub Project management
-* Full-stack development
-* Technical implementation
-* Technical blocker resolution
 
 ---
 
@@ -382,13 +614,17 @@ The project demonstrates the implementation of:
 * Full-stack web development
 * Modular software architecture
 * Authentication and authorization
-* Real-time systems
 * Database-driven applications
+* Real-time systems
+* Scheduling and matching algorithms
+* Social safety and moderation
+* In-app communication
+* Facility management systems
 * User-centered software design
 
 ---
 
-## 📄 License
+## License
 
 This project is developed for academic purposes as part of Universitas Gadjah Mada coursework.
 
