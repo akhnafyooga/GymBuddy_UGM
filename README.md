@@ -1,4 +1,4 @@
-# 🏋️ UGM Gym Partner & Facility Tracker
+# UGM Gym Partner & Facility Tracker - Gamaspot
 
 > An AI-powered workout partner matching and gym capacity monitoring platform built exclusively for Universitas Gadjah Mada (UGM) students.
 
