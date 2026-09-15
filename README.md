@@ -110,8 +110,7 @@ Students can select their workout location from supported UGM facilities:
 
 * GMC
 * Lembah
-* UGM Residence
-* GIK Gym
+* GIK Gym - NoLimits
 
 The selected facility is associated with the student's active workout session.
 
