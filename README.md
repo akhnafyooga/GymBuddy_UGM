@@ -6,11 +6,15 @@ UGM Gym Partner is a campus-focused fitness platform designed to help UGM studen
 
 The platform combines **UGM student verification, workout partner matching, schedule synchronization, facility check-ins, occupancy monitoring, and QR-based reservations** into a single campus fitness ecosystem.
 
+Created by:
+Akhnaf Fawzan Yogatrisna - 24/536720/TK/59561 - Full-stack Developer
+Musa Hanif Moeljawan - 24/536720/TK/59561 - Full-stack Developer
+
 ---
 
-## ✨ Features
+## Features
 
-### 🔐 Authentication & User Verification
+### Authentication & User Verification
 
 * UGM email verification using `@mail.ugm.ac.id`
 * Campus-only user access
@@ -19,7 +23,7 @@ The platform combines **UGM student verification, workout partner matching, sche
 * Verified UGM student profile
 * Workout style and pacing preferences
 
-### 🤝 Workout Partner Matching
+### Workout Partner Matching
 
 Find compatible workout partners based on:
 
@@ -38,19 +42,19 @@ Supported workout styles include:
 * Heavy Strength
 * PPL
 
-### 📅 Schedule Sync
+### Schedule Sync
 
 Students can enter their available workout hours through a visual schedule grid.
 
 The system identifies students with overlapping free time, making it easier to find workout partners who can train at the same time.
 
-### 📡 Real-Time Spotter Beacon
+### Real-Time Spotter Beacon
 
 Students can broadcast a **Spotter Beacon** when they need assistance during a workout.
 
 Nearby students training at the same facility can receive notifications and respond to the request.
 
-### 🏢 Facility Check-In
+### Facility Check-In
 
 Students can select their current workout location from supported UGM facilities:
 
@@ -61,7 +65,7 @@ Students can select their current workout location from supported UGM facilities
 
 The selected facility is displayed as part of the student's active workout status.
 
-### 📊 Live Gym Occupancy
+### Live Gym Occupancy
 
 Facility managers can monitor gym occupancy across supported facilities.
 
@@ -73,7 +77,7 @@ The system provides capacity indicators:
 
 This helps facility managers identify overcrowding and monitor facility usage.
 
-### 🎟️ Slot Reservation & QR Check-In
+### Slot Reservation & QR Check-In
 
 Students can reserve gym slots and receive a unique QR check-in pass.
 
@@ -81,7 +85,7 @@ Facility managers can scan the QR code to verify the student's reservation and e
 
 ---
 
-## 🧩 Core Modules
+## Core Modules
 
 The system is organized into three main modules:
 
@@ -93,7 +97,7 @@ The system is organized into three main modules:
 
 ---
 
-## 👥 User Roles
+## User Roles
 
 | Role                 | Responsibilities                                                                                    |
 | -------------------- | --------------------------------------------------------------------------------------------------- |
@@ -103,7 +107,7 @@ The system is organized into three main modules:
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```text
 UGM Gym Partner
@@ -129,7 +133,7 @@ UGM Gym Partner
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Framework:** Next.js
 * **Language:** TypeScript
@@ -143,7 +147,7 @@ UGM Gym Partner
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Requirements
 
@@ -201,7 +205,7 @@ http://localhost:3000
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 ugm-gym-partner/
@@ -240,7 +244,7 @@ ugm-gym-partner/
 
 ---
 
-## 🔄 Development Workflow
+## Development Workflow
 
 The project uses the **Scrum** framework with one-week development sprints.
 
@@ -278,7 +282,7 @@ The team maintains a maximum of **2 active tasks per developer** to minimize con
 
 ---
 
-## 🗺️ Development Roadmap
+## Development Roadmap
 
 ### Authentication & User Verification
 
@@ -313,7 +317,7 @@ The team maintains a maximum of **2 active tasks per developer** to minimize con
 
 ---
 
-## 🎯 Problem & Goals
+## Problem & Goals
 
 Students often face several difficulties when using campus fitness facilities:
 
@@ -328,7 +332,7 @@ UGM Gym Partner aims to address these problems by connecting students with compa
 
 ---
 
-## 🔒 Project Scope
+## Project Scope
 
 This platform is designed specifically for the **Universitas Gadjah Mada campus ecosystem**.
 
@@ -343,7 +347,7 @@ Access is restricted to authorized UGM users and campus facility operations.
 
 ---
 
-## 👨‍💻 Development Team
+## Development Team
 
 | Role                         | Member                   |
 | ---------------------------- | ------------------------ |
@@ -367,7 +371,7 @@ Access is restricted to authorized UGM users and campus facility operations.
 
 ---
 
-## 📚 Academic Context
+## Academic Context
 
 This project is developed as part of the **Software Engineering (RPL)** coursework at **Universitas Gadjah Mada**.
 
