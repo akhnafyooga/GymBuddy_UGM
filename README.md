@@ -7,8 +7,8 @@ UGM Gym Partner is a campus-focused fitness platform designed to help UGM studen
 The platform combines **UGM student verification, workout partner matching, schedule synchronization, facility check-ins, occupancy monitoring, and QR-based reservations** into a single campus fitness ecosystem.
 
 Created by:
-Akhnaf Fawzan Yogatrisna - 24/536720/TK/59561 - Full-stack Developer
-Musa Hanif Moeljawan - 24/536720/TK/59561 - Full-stack Developer
+* Akhnaf Fawzan Yogatrisna - 24/536720/TK/59561 - Full-stack Developer
+* Musa Hanif Moeljawan - 24/536720/TK/59561 - Full-stack Developer
 
 ---
 
